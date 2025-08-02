@@ -172,36 +172,6 @@ body {
   margin-top: 4px;
 }
 
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-content {
-    padding: 0 10px;
-  }
-
-  .about-content h2 {
-    font-size: 24px;
-  }
-
-  .about-image img {
-    max-width: 100%;
-    border-radius: 20px;
-    border-bottom-right-radius: 180px;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .feature {
-    justify-content: center;
-    text-align: left;
-  }
-}
-
 .container,
 .consult-container {
   max-width: 1200px;
@@ -236,7 +206,9 @@ body {
 
 .service-card img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
+  display: block;
+  height: auto;
 }
 
 .service-card h5 {
@@ -252,11 +224,9 @@ body {
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 10px;
-  margin: 10px 160px 8px 0;
+  margin: 10px 0 8px 0;
   text-align: left;
 }
-
-
 
 .btn-outline {
   display: inline-block;
@@ -275,40 +245,6 @@ body {
   color: white;
 }
 
-@media (max-width: 375px) {
-  .label {
-    font-size: 1rem;
-    display: block;
-    background: rgba(241, 230, 247, 1);
-    color: rgba(5, 47, 102, 1);
-    font-weight: 600;
-    padding: 4px 7px;
-    border-radius: 50px;
-    margin: 10px 240px 8px 0;
-    text-align: left;
-  }
-}
-@media (max-width: 420px) {
-  .label {
-    font-size: 1rem;
-    display: block;
-    background: rgba(241, 230, 247, 1);
-    color: rgba(5, 47, 102, 1);
-    font-weight: 600;
-    padding: 4px 7px;
-    border-radius: 50px;
-    margin: 10px 280px 8px 0;
-    text-align: left;
-  }
-}
-@media (max-width: 320px) {
-  .label {
-    font-size: 11px;
-    padding: 3px 8px;
-    border-radius: 8px;
-    text-align: center;
-  }
-}
 .consult-section {
   background-color: rgba(117, 6, 177, 1);
   padding: 50px 20px;
@@ -317,15 +253,6 @@ body {
   width: 83%;
   border-radius: 24px;
   margin: 0 10% 0 9%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.consult-container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,22 +312,6 @@ body {
   background-position: right center;
 }
 
-@media (max-width: 768px) {
-  .consult-box h2 {
-    font-size: 1.4rem;
-  }
-
-  .btn-white {
-    font-size: 0.9rem;
-    padding: 10px 18px;
-  }
-
-  .consult-section::before,
-  .consult-section::after {
-    display: none;
-  }
-}
-
 .testimonial-card:hover {
   transform: translateY(-5px);
 }
@@ -428,17 +339,6 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
-  .stars {
-    font-size: 1rem;
-  }
-
-  .testimonial-footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
 footer ul li {
   margin-bottom: 10px;
 }
@@ -453,17 +353,36 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
+  .about-container,
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
   }
 
+  .about-content {
+    padding: 0 10px;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    border-radius: 20px;
+    border-bottom-right-radius: 180px;
+  }
+
+  .features-grid,
   .nav-links {
+    flex-direction: column;
     display: none;
+    background: white;
     position: absolute;
     top: 70px;
     right: 10%;
-    flex-direction: column;
-    background: white;
     width: 200px;
     padding: 20px;
     border-radius: 10px;
@@ -474,30 +393,29 @@ footer p {
     display: flex;
   }
 
-  .nav-links a {
-    margin: 10px 0;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
+  .menu-toggle {
+    display: block;
   }
 
-  .hero {
-    flex-direction: column;
-    text-align: center;
+  .consult-box h2 {
+    font-size: 1.4rem;
   }
 
-  .img-bottom {
-    position: static;
-    margin-top: 20px;
+  .btn-white {
+    font-size: 0.9rem;
+    padding: 10px 18px;
   }
 
-  .about-container {
-    flex-direction: column;
+  .consult-section::before,
+  .consult-section::after {
+    display: none;
   }
+}
 
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+@media (max-width: 576px) {
+  .label {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 8px;
   }
 }
