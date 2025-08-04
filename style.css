@@ -147,6 +147,66 @@ body {
   line-height: 1.6;
 }
 
+/* Custom Colors */
+.bg-purple {
+  background-color: #6a1b9a;
+  color: white;
+}
+
+.text-purple {
+  color: #6a1b9a;
+}
+
+.about-section {
+  background-color: #f4e9fb; /* light lavender */
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+/* Optional: Image Styling */
+.rounded-image img {
+  border-radius: 300px 0 0 300px;
+  object-fit: cover;
+}
+/* Custom Colors */
+.bg-purple {
+  background-color: #6a1b9a;
+  color: white;
+}
+
+.text-purple {
+  color: #6a1b9a;
+}
+
+.about-section {
+  background-color: #f4e9fb; /* light lavender */
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+/* Optional: Image Styling */
+.rounded-image img {
+  border-radius: 300px 0 0 300px;
+  object-fit: cover;
+}
+
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -418,4 +478,55 @@ footer p {
     padding: 4px 8px;
     border-radius: 8px;
   }
+}
+
+
+
+
+
+
+
+
+
+.cta-section {
+  background-color:  rgba(117, 6, 177, 1);
+  border-radius: 20px;
+  margin: 24px 7%;
+  background-image: url('img/Brutalist\ 02.png'), url('img/Brutalist 3.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+  background-size: auto 100%, auto 100%;
+}
+
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .cta-section {
+    background-size: 50%, 50%;
+    background-position: left center, right center;
+  }
+}
+@media (max-width: 200px) {
+  .cta-section {
+    background-size: 100%, 100%;
+    background-position: left center, right center;
+  }
+  .badge {
+    font-size: 4px;
+  }
+}
+
+.badge {
+  font-size: 12px;
+  background: rgba(83, 4, 126, 1);
+  color: var(--Grays-White, rgba(255, 255, 255, 1));
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+.text {
+  margin-top: -20px;
+  font-size: 40px;
+}
+.aim1 {
+  margin-top: 20px;
 }
