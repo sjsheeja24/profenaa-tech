@@ -18,18 +18,20 @@ body {
 .navbar {
   background-color: #fff;
   box-shadow: 0px 4px 12px 0px #0A0A0A1F;
+  color: rgba(0, 0, 0, 1);
+
 }
 
-.navbar-brand {
+/* .navbar-brand {
   font-weight: bold;
   font-size: 18px;
   color: rgba(0, 0, 0, 1);
-}
+} */
 
-.nav-link {
+/* .nav-link {
   color: #000;
   font-weight: 500;
-}
+} */
 
 .nav-link:hover {
   color: #7506B1;
