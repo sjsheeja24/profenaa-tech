@@ -22,17 +22,6 @@ body {
 
 }
 
-/* .navbar-brand {
-  font-weight: bold;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 1);
-} */
-
-/* .nav-link {
-  color: #000;
-  font-weight: 500;
-} */
-
 .nav-link:hover {
   color: #7506B1;
 }
@@ -481,15 +470,6 @@ footer p {
     border-radius: 8px;
   }
 }
-
-
-
-
-
-
-
-
-
 .cta-section {
   background-color:  rgba(117, 6, 177, 1);
   border-radius: 20px;
@@ -499,9 +479,6 @@ footer p {
   background-position: left top, right bottom;
   background-size: auto 100%, auto 100%;
 }
-
-
-/* For mobile responsiveness */
 @media (max-width: 768px) {
   .cta-section {
     background-size: 50%, 50%;
